@@ -1,0 +1,67 @@
+@import url(/src/css/login.css);
+
+.mainContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4FCCC3;
+    height: 80px;
+    border-bottom: #102048 solid;
+    color: #102048;
+}
+
+.mainContainer a{
+    text-decoration: none;
+    color:#102048;
+    font-size: 15px;
+}
+
+.buttonini{
+    border: #102048 solid;
+    border-radius: 20px;
+    padding: 4px;
+    width: 120px;
+    text-align: center;
+    color: #102048;
+}
+
+.buttonreg{
+    color:#FEF4DB !important ;
+    background-color: #102048;
+    border-radius: 20px;
+    padding: 4px;
+    width: 120px;
+    text-align: center;
+}
+
+
+footer{
+    background-color: #102048;
+    color: #FEF4DB;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer h6{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;   
+}
+
+footer img{
+    margin: 0px;
+    padding: 0px;
+    height: 200px;
+}
+
+footer li{
+    list-style-type: none;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FEF4DB;
+}
+
