@@ -6,8 +6,8 @@ const NavBar = () => {
         <div className="mainContainer">
             <Link to="/"><img src="https://i.ibb.co/7StzrFv/Dise-o-sin-t-tulo.png" alt="" height="70px"/></Link>
             <a href="/html/nosotros.html">Nosotros</a>
-            <a href="/html/colaboradoras.html">Colaboradoras</a>
-            <a href="/html/noticias.html">Noticias</a>
+            <Link to="/FormularioTabla">Colaboradoras</Link>
+            <a href="/CardMarvel">Noticias</a>
             <div class="dropdown d-block">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Crece
@@ -31,7 +31,7 @@ const NavBar = () => {
     )
 }
 
-export default NavBar;
+export {NavBar};
 
 
 

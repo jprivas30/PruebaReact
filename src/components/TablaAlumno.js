@@ -1,8 +1,8 @@
 import React from "react";
 
-const TablaAlumno = () => {
+const TablaAlumno = ({estudiante}) => {
     return (
-        <div className='col-6 m-3 rounded-3 shadow'>
+        <div className='col-md-6 p-3 col-sm-12 rounded-3 shadow'>
         <div className='d-flex justify-content-center m-2'>
             <h3>Lista</h3>
         </div>
@@ -10,46 +10,28 @@ const TablaAlumno = () => {
             <table class="table">
                 <thead>
                     <tr className='bg-light text-dark'>
-                        <th scope="col">Id Equipo</th>
+                        <th scope="col">Id</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
+                        <th scope="col">Equipo</th>
                         <th scope="col">Modificar</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {estudiante.map(e => (
                     <tr>
-                        <th scope="row">7</th>
-                        <td>Karen</td>
-                        <td>Rodriguez</td>
+                        <th scope="row">{e.estudiante_id}</th>
+                        <td>{e.nombre}</td>
+                        <td>{e.apellido}</td>
+                        <td>{e.equipo_id}</td>
                         <td>
-                            <div className='d-flex'>
-                                <button type="button" className="btn btn-outline-secondary ">Editar</button>
-                                <button type="button" className="btn btn-outline-danger ms-2">Eliminar</button>
+                            <div className='row'>
+                                <button type="button" className="btn btn-outline-secondary m-1 col-md-5 col-sm-12">Editar</button>
+                                <button type="button" className="btn btn-outline-danger m-1 col-md-5 col-sm-12">Eliminar</button>
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Gissele</td>
-                        <td>Gatica</td>
-                        <td>
-                            <div className='d-flex'>
-                                <button type="button" className="btn btn-outline-secondary">Editar</button>
-                                <button type="button" className="btn btn-outline-danger ms-2">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Juan Pablo</td>
-                        <td>Mora</td>
-                        <td>
-                            <div className='d-flex'>
-                                <button type="button" className="btn btn-outline-secondary ">Editar</button>
-                                <button type="button" className="btn btn-outline-danger ms-2">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
@@ -58,4 +40,4 @@ const TablaAlumno = () => {
 
 }
 
-export default TablaAlumno;
+export {TablaAlumno};

@@ -34,4 +34,4 @@ const Slide = () => {
     )
 }
 
-export default Slide;
+export {Slide};

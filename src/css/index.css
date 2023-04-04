@@ -1,4 +1,6 @@
 @import url(/src/css/login.css);
+@import url(/src/css/card.css);
+
 
 .mainContainer{
     display: flex;
@@ -8,6 +10,10 @@
     height: 80px;
     border-bottom: #102048 solid;
     color: #102048;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
 }
 
 .mainContainer a{
@@ -41,6 +47,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    width: 100%;
 }
 
 footer h6{
