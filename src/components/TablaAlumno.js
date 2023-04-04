@@ -1,6 +1,6 @@
 import React from "react";
 
-const TablaAlumno = ({estudiante}) => {
+const TablaAlumno = ({estudiante, eliminarEstudiante}) => {
     return (
         <div className='col-md-6 p-3 col-sm-12 rounded-3 shadow'>
         <div className='d-flex justify-content-center m-2'>
@@ -27,7 +27,7 @@ const TablaAlumno = ({estudiante}) => {
                         <td>
                             <div className='row'>
                                 <button type="button" className="btn btn-outline-secondary m-1 col-md-5 col-sm-12">Editar</button>
-                                <button type="button" className="btn btn-outline-danger m-1 col-md-5 col-sm-12">Eliminar</button>
+                                <button type="button" className="btn btn-outline-danger m-1 col-md-5 col-sm-12" onClick={()=>{eliminarEstudiante(e.estudiante_id)}}>Eliminar</button>
                             </div>
                         </td>
                     </tr>

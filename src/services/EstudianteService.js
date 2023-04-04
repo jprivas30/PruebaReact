@@ -30,7 +30,7 @@ const estudianteEdit = async (estudiante) => {
 }
 
 const estudianteDelete = async (id) => {
-    const rest = await axios.delete(baseURL + "/estudiante/Delete" + id)
+    const rest = await axios.delete(baseURL + "/estudiante/Delete/" + id)
     console.log(rest);
     return rest.data
 
@@ -38,4 +38,4 @@ const estudianteDelete = async (id) => {
 
 
 
-export { getAll }
+export { getAll , estudianteAdd, estudianteDelete, estudianteEdit }
